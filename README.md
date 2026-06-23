@@ -2,6 +2,8 @@
 
 **Apex Labs** is a full-stack, AI-driven athletic performance application. It generates customized, dynamic training protocols based on a user's real-time biometric telemetry, shifting away from generic templates to offer highly specific, domain-aware sports conditioning. 
 
+https://github.com/user-attachments/assets/7644ea2b-040e-4505-9be9-c6417c79a3ac
+
 Built with a decoupled React/Django architecture, it processes live user metrics through an orchestrated OpenAI pipeline to deliver safe, effective, and structurally predictable workout JSON payloads.
 
 ---
