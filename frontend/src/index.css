@@ -1,0 +1,37 @@
+/* Hide global browser scrollbar to lock in a premium, full-screen console layout */
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Optional: Clean, minimal styling for the interior workout results scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(74, 222, 128, 0.2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom slow-pulse animation for our ambient blurred background orbs */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.08); }
+}
+
+.ambient-light {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
